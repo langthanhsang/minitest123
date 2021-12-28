@@ -11,8 +11,6 @@ public class MainStudent {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter student number: ");
         int size = scanner.nextInt();
-        MainStudent[] mainStudents = new MainStudent[size];
-
         int choice;
         do {
             System.out.println("Menu");

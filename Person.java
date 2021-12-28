@@ -3,13 +3,21 @@ package minitest;
 public class Person {
     private String name;
     private int age;
-     private int id;
-    public Person(String name, int age) {
+     static int id;
+     private int idhuman;
+
+     public Person(String name, int age, double averageScore) {
+
+     }
+
+    public Person() {
     }
 
-    public Person(String name, int age,int id) {
+    public Person(String name, int age, int idhuman) {
         this.name = name;
         this.age = age;
+        this.idhuman = idhuman;
+        id++;
     }
 
     public String getName() {
@@ -28,12 +36,20 @@ public class Person {
         this.age = age;
     }
 
-    public int getId() {
+    public static int getId() {
         return id;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public static void setId(int id) {
+        Person.id = id;
+    }
+
+    public int getIdhuman() {
+        return idhuman;
+    }
+
+    public void setIdhuman(int idhuman) {
+        this.idhuman = idhuman;
     }
 
     @Override
@@ -41,7 +57,7 @@ public class Person {
         return "Person{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
-                ", id=" + id +
+                ", idhuman=" + idhuman +
                 '}';
     }
 }

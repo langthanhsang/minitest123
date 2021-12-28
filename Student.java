@@ -1,26 +1,28 @@
 package minitest;
 
-public class Student extends Person{
+public class Student extends Person {
 
-    private double average;
+    private  double averageScore;
 
 
-    public Student(String name, int age) {
-        super(name, age);
+    public Student() {
+
     }
 
-    public double getAverage() {
-        return average;
+    public Student(double averageScore) {
+        super(name, age, averageScore);
+        this.averageScore = averageScore;
     }
 
-    public void setAverage(double average) {
-        this.average = average;
+    public Student(String name, int age, double average) {
+        super();
+        this.averageScore = average;
     }
 
     @Override
     public String toString() {
-        return "Student{" +
-                "average=" + average +
+        return "Student{" + 
+                "average=" + averageScore +
                 '}';
     }
 }

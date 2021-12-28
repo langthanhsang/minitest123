@@ -6,21 +6,23 @@ import java.util.ArrayList;
 
 public interface Manager {
 
-    void displayStudent(int n);
+   void display();
+   void add();
+   void findHuman();
 
-    void displayStudent();
-    void addStudent();
+    void findHuman(int id);
 
-    void addStudent(ArrayList<Student> arr);
+    void deteleHuman();
 
-    void  sesrchStudent();
+    void deteleHuman(int id);
 
-    void sesrchStudent(ArrayList<Student> arr);
+    void editHumanId();
 
-    void deleteStudent();
-    void editStudent();
-    void sortStudent();
-    void totalPoint();
+    void editHumanId(int id);
+
+    void arrangeListBYAverageScore();
+   double sumOfScore();
+
 
     }
 
